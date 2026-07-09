@@ -112,8 +112,7 @@ st.dataframe(
         "marque": "Marque", "modele": "Modèle", "nb_total": "Total",
         "nb_electrique": "Électrique", "proportion_electrique": "% Électrique",
     }).style
-        .format({"% Électrique": "{:.1%}"})
-        .background_gradient(subset=["% Électrique"], cmap="Greens", vmin=0, vmax=1),
+        .format({"% Électrique": "{:.1%}"}),
     use_container_width=True,
     hide_index=True,
     height=500,
